@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Smoke: CartPole DQN",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/train.py",
+      "console": "integratedTerminal",
+      "args": ["--config", "configs/smoke_cartpole.json", "--skip-video"]
+    },
+    {
+      "name": "Train: CartPole DQN",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/train.py",
+      "console": "integratedTerminal",
+      "args": ["--config", "configs/cartpole_dqn.json"]
+    },
+    {
+      "name": "Train: CartPole Dueling Double DQN",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/train.py",
+      "console": "integratedTerminal",
+      "args": ["--config", "configs/cartpole_dueling.json"]
+    },
+    {
+      "name": "Train: LunarLander Dueling Double DQN",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/train.py",
+      "console": "integratedTerminal",
+      "args": ["--config", "configs/lunarlander_dueling.json"]
+    },
+    {
+      "name": "Tests: current file",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "console": "integratedTerminal",
+      "args": ["${file}", "-q"]
+    }
+  ]
+}

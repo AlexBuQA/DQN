@@ -1,0 +1,26 @@
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# Local task inputs and experimental runs
+input/
+runs/
+videos_cartpole*/
+videos_lunarlander/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.log
+*.zip
+
+# Keep curated results, checkpoints and the executed notebook versioned.

@@ -1,0 +1,76 @@
+{
+  "source": "MEPHI_RL26_hw2_DQN_Бужор_Александра.ipynb",
+  "cartpole_dqn": {
+    "best_step": 54000,
+    "best_validation_mean": 500.0,
+    "final": {
+      "mean": 500.0,
+      "std": 0.0,
+      "min": 500.0,
+      "max": 500.0
+    },
+    "games": 30,
+    "seed_start": 42000
+  },
+  "cartpole_dueling_double_dqn": {
+    "best_validation_mean": 500.0,
+    "final": {
+      "mean": 500.0,
+      "std": 0.0,
+      "min": 500.0,
+      "max": 500.0
+    },
+    "games": 30,
+    "seed_start": 120000
+  },
+  "lunarlander_dueling_double_dqn": {
+    "best_step": 170000,
+    "best_validation": {
+      "mean": 262.0,
+      "std": 40.7,
+      "p10": 239.5
+    },
+    "final": {
+      "mean": 268.2,
+      "std": 35.9,
+      "median": 271.0,
+      "p10": 239.0,
+      "min": 155.7,
+      "max": 320.3
+    },
+    "games": 30,
+    "seed_start": 42000,
+    "analysis_episodes": [
+      {
+        "episode": "1",
+        "reward": 252.6,
+        "steps": 180
+      },
+      {
+        "episode": "2",
+        "reward": 133.57,
+        "steps": 1000
+      },
+      {
+        "episode": "3",
+        "reward": 263.56,
+        "steps": 175
+      },
+      {
+        "episode": "4",
+        "reward": 297.25,
+        "steps": 197
+      },
+      {
+        "episode": "5",
+        "reward": 244.62,
+        "steps": 231
+      }
+    ],
+    "calibration": {
+      "mae": 22.75,
+      "bias_agent_minus_mc": -16.87,
+      "pearson_correlation": 0.791
+    }
+  }
+}

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dqn-cartpole-lunarlander"
+version = "1.0.0"
+description = "DQN, Double DQN and Dueling DQN for CartPole and LunarLander"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+authors = [{ name = "Alexandra Bujor" }]
+dependencies = [
+  "numpy>=1.26,<2",
+  "torch>=2.2,<2.3",
+  "gymnasium[box2d]>=1.1,<2",
+  "matplotlib>=3.9,<4",
+  "tqdm>=4.66,<5",
+  "psutil>=6,<8",
+  "scipy>=1.12,<2",
+  "moviepy>=2,<3",
+  "imageio-ffmpeg>=0.5,<1",
+  "swig>=4,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "ipykernel>=6.29,<8",
+  "nbformat>=5.10,<6",
+  "nbclient>=0.10,<1",
+]
+
+[tool.setuptools.packages.find]
+include = ["dqn*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
